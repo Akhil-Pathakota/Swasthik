@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Swasthik Rehab \u0026 Pallative Care",
+  "description": "A professional website for Swasthik Rehab \u0026 Pallative Care, showcasing medical rehabilitation services, facilities, and contact information.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
