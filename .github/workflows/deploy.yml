@@ -14,12 +14,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
       
-      - name: Clean install dependencies
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+      
+      - name: Install dependencies
         run: |
-          rm -rf node_modules package-lock.json
-          npm install
+          npm ci
+          npm rebuild
       
       - name: Build
         run: npm run build
