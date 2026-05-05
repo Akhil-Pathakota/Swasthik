@@ -1296,7 +1296,7 @@ export function Home() {
 export default function App() {
   return (
     /* The basename MUST match your repository name exactly */
-    <Router basename="/Swasthik"> 
+    <Router> 
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
